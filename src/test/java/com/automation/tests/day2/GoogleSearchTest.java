@@ -26,8 +26,19 @@ public class GoogleSearchTest {
         // to enter text, use sendKeys() method
         // how to press Enter after entering text?
         // use Key.ENTER - perform keyboard click
+        // keysToSend - name of parameter, we don't specify it
         search.sendKeys("Java", Keys.ENTER);
-        Thread.sleep(2000);
+        // 2000 - 2 seconds
+        // 12000 - 12 seconds
+        // Thread.sleep() - is used to pause java program
+        Thread.sleep(4000);
+        // if you see <a> element, it's called link
+        // visible text of this link, can be used by selenium to find this element
+        WebElement news = driver.findElement(By.linkText("News") );
+        news.click();// to click on the link
+        Thread.sleep(4000);
+
+
 
 
         driver.quit();
