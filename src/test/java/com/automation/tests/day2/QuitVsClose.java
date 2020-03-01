@@ -13,9 +13,9 @@ public class QuitVsClose {
 
         driver.get("http://practice.cybertekschool.com/open_new_tab");
 
-        Thread.sleep(4000);
+        Thread.sleep(5000);
 
-
+//        driver.close();// will only close one window
         driver.quit();// to close all windows that webdriver has opened in execution
 
 
